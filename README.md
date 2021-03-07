@@ -82,7 +82,7 @@ docker run -d --rm   -p 3000:3000 --name genapp genapp
 
 Check in http://localhost:3000/ and stop the container with `docker stop genapp`.
 
-If you do not like my shoe, another image can be passed to the container from a local image `files/shoe.jpg` (I could have named that differently...) with
+If you do not like my shoe or the image that ended to your container, another image can be passed to the container by mounting a local `files/shoe.jpg` (I could have named that differently...) with
 
 ```
 docker run -d --rm -v $PWD/files:/usr/src/app/public/images -p 3000:3000 --name genapp genapp
